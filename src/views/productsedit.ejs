@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Stock Price</title>
+    <link rel="stylesheet" href="templatemo-parallax-starter.css">
+    <style>
+        .edit-container { padding: 100px 50px; background: #222; color: white; min-height: 100vh; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #444; padding: 12px; text-align: left; }
+        th { background-color: #333; }
+        input[type="number"] { width: 80px; padding: 5px; }
+        .btn-update { background: #ff4d4d; color: white; border: none; padding: 5px 15px; cursor: pointer; }
+        .btn-update:hover { background: #ff1a1a; }
+    </style>
+</head>
+<body>
+    <nav id="templatemo-nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">ฟลุ๊ค2</a>
+                        <ul class="nav-links" id="navLinks">
+                <li><a href="/" class="active">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#gallery">GALLERY</a></li>
+                <li><a href="products">products</a></li>
+                <li><a href="productsedit">producsedit</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="edit-container">
+        <h1>แก้ไขราคาสินค้า (Table: Stock)</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Qty</th>
+                    <th>Price</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% items.forEach(function(item) { %>
+                <tr>
+                    <form action="/productsedit/update" method="POST">
+                        <td><%= item.id %> <input type="hidden" name="id" value="<%= item.id %>"></td>
+                        <td><%= item.name %></td>
+                        <td><%= item.qty %></td>
+                        <td>
+                            <input type="number" name="price" value="<%= item.price %>" step="0.01">
+                        </td>
+                        <td>
+                            <button type="submit" class="btn-update">Update</button>
+                        </td>
+                    </form>
+                </tr>
+                <% }); %>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

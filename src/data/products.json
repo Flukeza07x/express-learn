@@ -1,0 +1,32 @@
+ [
+    {
+      "id":0,
+      "productTitle": "ไก่",
+      "pdetail": "ไก่ตัวใหญ่",
+      "price": 15
+    },
+    {
+      "id":1,
+      "productTitle": "ไก่2",
+      "pdetail": "ไก่ตัวใหญ่2",
+      "price": 25
+    },
+    {
+      "id":2,
+      "productTitle": "ไก่3",
+      "pdetail": "ไก่ตัวใหญ่3",
+      "price": 35
+    },
+    {
+      "id":3,
+      "productTitle": "ไก่4",
+      "pdetail": "ไก่ตัวใหญ่4",
+      "price": 45
+    },
+    {
+      "id":3,
+      "productTitle": "ไก่5",
+      "pdetail": "ไก่ตัวใหญ่5",
+      "price": 55
+    }
+  ]

@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Wireless Mouse",
+    "qty": 50,
+    "price": 450
+  },
+  {
+    "id": 2,
+    "name": "Mechanical Keyboard",
+    "qty": 30,
+    "price": 1200
+  },
+  {
+    "id": 3,
+    "name": "Gaming Monitor 24",
+    "qty": 15,
+    "price": 4500
+  },
+  {
+    "id": 4,
+    "name": "USB-C Hub",
+    "qty": 40,
+    "price": 850
+  },
+  {
+    "id": 5,
+    "name": "Webcam 1080p",
+    "qty": 25,
+    "price": 1500
+  },
+  {
+    "id": 6,
+    "name": "Bluetooth Speaker",
+    "qty": 20,
+    "price": 990
+  },
+  {
+    "id": 7,
+    "name": "Laptop Stand",
+    "qty": 35,
+    "price": 350
+  },
+  {
+    "id": 8,
+    "name": "External Hard Drive 1TB",
+    "qty": 12,
+    "price": 1800
+  },
+  {
+    "id": 9,
+    "name": "Gaming Headset",
+    "qty": 22,
+    "price": 1250
+  },
+  {
+    "id": 10,
+    "name": "Mouse Pad RGB",
+    "qty": 60,
+    "price": 290
+  }
+]
